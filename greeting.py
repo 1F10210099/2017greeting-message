@@ -1,7 +1,7 @@
- HEAD
+
 from datetime import datetime
 
-def greet():
+def greet(name):
     hour = datetime.now().hour
     if hour <= 11:
         message = 'Good morning'
@@ -9,8 +9,7 @@ def greet():
         message = 'Hello'
     else:
         message = 'Good evening'
-    message = 'Hello, ' + name + '-san!
+    message += ', ' + name + '-san!'
     print(message)
-
 
 greet('Inoue')
